@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+using namespace std;
+	int max(int a, int b){
+		if (a>b) {return a;} else if (a!=b) {return b;} else {cout<<"Equal";}
+}
+	float max(float a, float b){
+		if (a>b) {return a;} else if (a!=b) {return b;} else {cout<<"Equal";}
+}
+string operator+(string first,string second){
+	first.insert(3,second);
+	return first;
+}
+int main() {
+	float maximum=max(9.11,1.488);
+	cout<<endl<<maximum;
+	string stringone="one";
+	string stringtwo="two";
+	cout<<endl<<stringone+stringtwo;
+}
